@@ -1,0 +1,8 @@
+[
+	{ "command": "close_by_index", "args": { "group": -1, "index": -1 }, "caption": "閉じる" },
+	{ "command": "close_others_by_index", "args": { "group": -1, "index": -1 }, "caption": "他を閉じる" },
+	{ "command": "close_to_right_by_index", "args": { "group": -1, "index": -1 }, "caption": "右側をすべて閉じる" },
+	{ "caption": "-" },
+	{ "command": "new_file", "caption": "新規作成" },
+	{ "command": "prompt_open_file", "caption": "ファイルを開く" }
+]

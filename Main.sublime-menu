@@ -1,0 +1,114 @@
+[
+    {
+        "caption": "ファイル(F)","mnemonic": "F",
+        "id": "file"
+    },
+    {
+        "caption": "編集(E)","mnemonic": "E",
+        "id": "edit",
+        "children":[
+            {
+                "caption": "Line", "caption": "行の操作(L)", "mnemonic": "L",
+                "id": "line"
+            },
+            {
+                "caption": "コメント(m)", "mnemonic": "m",
+                "id": "comment"
+            },
+            {
+                "caption": "テキスト(T)", "mnemonic": "T",
+                "id": "text"
+            },
+            {
+                "caption": "XMLタグ",
+                "id": "tag"
+            },
+            {
+                "caption": "マーク",
+                "id": "mark"
+            },
+            {
+                "caption": "コード折りたたみ",
+                "id": "fold"
+            },
+            {
+                "caption": "大文字/小文字変換(a)", "mnemonic": "a",
+                "id": "convert_case"
+            },
+            {
+                "caption": "折り返し",
+                "id": "wrap"
+            }
+        ]
+    },
+    {
+        "caption": "選択(S)","mnemonic": "S",
+        "id": "selection"
+    },
+    {
+        "caption": "検索(i)","mnemonic": "i",
+        "id": "find"
+    },
+    {
+        "caption": "表示(V)","mnemonic": "V",
+        "id": "view",
+        "children":
+        [
+            {
+                "caption": "サイドバー",
+                "id": "side_bar"
+            },
+            {
+                "caption": "画面分割(L)","mnemonic": "L",
+                "id": "layout"
+            },
+            {
+                "caption": "シンタックス(S)","mnemonic": "S",
+                "id": "syntax"
+            },
+            {
+                "caption": "インデント設定(I)","mnemonic": "I",
+                "id": "indentation"
+            },
+            {
+                "caption": "改行コード(n)","mnemonic": "n",
+                "id": "line_endings"
+            }
+        ]
+    },
+    {
+        "caption": "移動(G)","mnemonic": "G",
+        "id": "goto",
+        "children":
+        [
+            {
+                "caption": "ファイル移動(t)","mnemonic": "t",
+                "id": "switch_file"
+            },
+            {
+                "caption": "スクロール(S)","mnemonic": "S",
+                "id": "scroll"
+            },
+            {
+                "caption": "ブックマーク(b)","mnemonic": "b",
+                "id": "bookmarks"
+            }
+        ]
+    },
+    {
+        "caption": "ツール(T)","mnemonic": "T",
+        "id": "tools"
+    },
+    {
+        "caption": "プロジェクト(P)","mnemonic": "P",
+        "id": "project"
+    },
+    {
+        "caption": "基本設定(n)","mnemonic": "n",
+        "id": "preferences"
+    },
+    {
+        "caption": "ヘルプ(H)","mnemonic": "H",
+        "id": "help"
+    }
+]
