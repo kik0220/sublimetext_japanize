@@ -5,12 +5,12 @@
 			"name": "Japanize",
 			"description": "Japanese menu for Sublime Text 2",
 			"author": "kik0220",
-			"homepage": "https://github.com/kik0220/",
-			"last_modified": "2013-05-05 21:00:00",
+			"homepage": "https://github.com/kik0220/sublimetext_japanize",
+			"last_modified": "2013-05-20 20:00:00",
 			"platforms": {
 				"*": [
 					{
-						"version": "2013.05.05.21.00.00",
+						"version": "2013.05.20.20.00.00",
 						"url": "https://github.com/kik0220/sublimetext_japanize/zip/master"
 					}
 				]
