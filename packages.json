@@ -6,11 +6,11 @@
 			"description": "Japanese menu for Sublime Text 2",
 			"author": "kik0220",
 			"homepage": "https://github.com/kik0220/sublimetext_japanize",
-			"last_modified": "2013-05-20 20:23:00",
+			"last_modified": "2013-05-20 20:34:00",
 			"platforms": {
 				"*": [
 					{
-						"version": "2013.05.20.20.23.00",
+						"version": "2013.05.20.20.34.00",
 						"url": "https://nodeload.github.com/kik0220/sublimetext_japanize/zip/master"
 					}
 				]
