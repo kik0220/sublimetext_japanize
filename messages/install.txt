@@ -1,6 +1,8 @@
-Japanese menu for Sublime Text 2  
+Japanese menu for Sublime Text 2 & 3  
 
 [ゆーがいぶろぐ](http://blog.huwy.org/article/292827228.html)さんの日本語化ファイルがベースです。  
+
+※Sublime Text 3をお使いの方は「Sublime Text 2」を「Sublime Text 3」に読み替えてください。  
 C:\Users\ユーザー名\AppData\Roaming\Sublime Text 2\Packages\Japanizeに同梱されている*.jpファイルを、  
 
  C:\Users\ユーザー名\AppData\Roaming\Sublime Text 2\Packages\Default  

@@ -3,7 +3,7 @@ sublimetext_japanize
 
 Japanese menu for Sublime Text 2  
 
-Sublime Text 2の日本語化プラグインです。
+Sublime Text 2の日本語化プラグインです。  
 [ゆーがいぶろぐ](http://blog.huwy.org/article/292827228.html)さんの日本語化ファイルがベースです。  
 同梱されている*.jpファイルを、  
 *C:\Users\ユーザー名\AppData\Roaming\Sublime Text 2\Packages\Default*  
