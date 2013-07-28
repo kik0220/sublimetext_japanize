@@ -1,13 +1,18 @@
 sublimetext_japanize
 ====================
 
-Japanese menu for Sublime Text 2  
+Japanese menu for Sublime Text 2 & 3  
 
 Sublime Text 2の日本語化プラグインです。  
 [ゆーがいぶろぐ](http://blog.huwy.org/article/292827228.html)さんの日本語化ファイルがベースです。  
-同梱されている*.jpファイルを、  
-*C:\Users\ユーザー名\AppData\Roaming\Sublime Text 2\Packages\Default*  
-にコピーし、オリジナルのファイル（.jpが付かないファイル）と置き換えると、より深く日本語化されます。  
-さらに、Main.sublime-menu（.jpが付かない方）を、  
-*C:\Users\ユーザー名\AppData\Roaming\Sublime Text 2\Packages\User*  
-にコピーすると、他のプラグインで上書きされてしまっているトップメニューも日本語化されます。
+  
+※Sublime Text 3をお使いの方は「Sublime Text 2」を「Sublime Text 3」に読み替えてください。また、Defaultフォルダがない場合は作成してください。  
+適用手順  
+１．C:\Users\ユーザー名\AppData\Roaming\Sublime Text 2\Packages\Japanizeにインストールされている*.jpファイルを、  
+ 　　　C:\Users\ユーザー名\AppData\Roaming\Sublime Text 2\Packages\Default  
+　　にコピーします。  
+２．コピーしたファイルをオリジナルのファイル（.jpが付かないファイル）と置き換えます。（念のため、オリジナルのファイルは.orgなどを付けて保管しておきましょう。）  
+３．C:\Users\ユーザー名\AppData\Roaming\Sublime Text 2\Packages\Japanize\Main.sublime-menu（.jpが付かない方）を、  
+ 　　　C:\Users\ユーザー名\AppData\Roaming\Sublime Text 2\Packages\User  
+　　にコピーします。すると、他のプラグインで上書きされてしまっているトップメニューも日本語化されます。  
+以上です。  

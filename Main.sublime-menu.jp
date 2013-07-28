@@ -802,7 +802,7 @@
             { "command": "show_license_window", "caption": "ライセンス登録" },
             { "command": "remove_license", "caption": "ライセンス削除"},
             { "caption": "-" },
-            { "command": "show_about_window", "caption": "Sublime Text 2について(A)", "mnemonic": "A" }
+            { "command": "show_about_window", "caption": "Sublime Text 2&3について(A)", "mnemonic": "A" }
         ]
     }
 ]
