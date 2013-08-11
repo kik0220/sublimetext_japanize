@@ -3,15 +3,15 @@
 	"packages": [
 		{
 			"name": "Japanize",
-			"description": "Japanese menu for Sublime Text 2 & 3",
+			"description": "Japanese menu for Sublime Text 2",
 			"author": "kik0220",
 			"homepage": "https://github.com/kik0220/sublimetext_japanize",
-			"last_modified": "2013-07-28 08:56:00",
+			"last_modified": "2013-08-12 00:58:00",
 			"platforms": {
 				"*": [
 					{
-						"version": "2013.07.28.08.56.00",
-						"url": "https://nodeload.github.com/kik0220/sublimetext_japanize/zip/master"
+						"version": "2013.08.12.00.58.00",
+						"url": "https://github.com/kik0220/sublimetext_japanize/zipball/master"
 					}
 				]
 			}
