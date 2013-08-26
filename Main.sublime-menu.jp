@@ -6,10 +6,10 @@
         "children":
         [
             { "command": "new_file", "caption": "新規作成(N)", "mnemonic": "N" },
+
             { "command": "prompt_open_file", "caption": "ファイルを開く(O)…", "mnemonic": "O", "platform": "!OSX" },
             { "command": "prompt_open_folder", "caption": "フォルダを開く…", "platform": "!OSX" },
             { "command": "prompt_open", "caption": "開く…", "platform": "OSX" },
-
             {
                 "caption": "最近使ったファイルを開く(R)…",
                 "mnemonic": "R",
@@ -157,6 +157,7 @@
             { "command": "cut", "caption": "切り取り(n)", "mnemonic": "n" },
             { "command": "paste", "caption": "貼り付け(P)", "mnemonic": "P" },
             { "command": "paste_and_indent", "caption": "貼り付けとインデント(I)", "mnemonic": "I" },
+            { "command": "paste_from_history", "caption": "履歴から貼り付け" },
             { "caption": "-" },
             {
                 "caption": "Line", "caption": "行の操作(L)", "mnemonic": "L",
@@ -169,7 +170,7 @@
                     { "command": "swap_line_up", "caption": "前行と入れ替え" },
                     { "command": "swap_line_down", "caption": "次行と入れ替え" },
                     { "command": "duplicate_line", "caption": "行の複製挿入" },
-                    { "command": "run_macro_file", "args": {"file": "Packages/Default/Delete Line.sublime-macro"}, "caption": "行を削除" },
+                    { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"}, "caption": "行を削除" },
                     { "command": "join_lines", "caption": "行の結合" }
                 ]
             },
@@ -187,14 +188,14 @@
                 "id": "text",
                 "children":
                 [
-                    { "command": "run_macro_file", "args": {"file": "Packages/Default/Add Line Before.sublime-macro"}, "caption": "前行に空行を挿入" },
-                    { "command": "run_macro_file", "args": {"file": "Packages/Default/Add Line.sublime-macro"}, "caption": "次行に空行を挿入" },
+                    { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line Before.sublime-macro"}, "caption": "前行に空行を挿入" },
+                    { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line.sublime-macro"}, "caption": "次行に空行を挿入" },
                     { "caption": "-" },
                     { "command": "delete_word", "args": { "forward": true }, "caption": "単語末尾まで削除" },
                     { "command": "delete_word", "args": { "forward": false }, "caption": "単語先頭まで削除" },
-                    { "command": "run_macro_file", "args": {"file": "Packages/Default/Delete Line.sublime-macro"}, "caption": "行を削除" },
-                    { "command": "run_macro_file", "args": {"file": "Packages/Default/Delete to Hard EOL.sublime-macro"}, "caption": "行末まで削除" },
-                    { "command": "run_macro_file", "args": {"file": "Packages/Default/Delete to Hard BOL.sublime-macro"}, "caption": "行頭まで削除" },
+                    { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"}, "caption": "行を削除" },
+                    { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard EOL.sublime-macro"}, "caption": "行末まで削除" },
+                    { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard BOL.sublime-macro"}, "caption": "行頭まで削除" },
                     { "caption": "-" },
                     { "command": "transpose", "caption": "文字または単語を転置" }
                 ]
@@ -206,7 +207,7 @@
                 [
                     { "command": "終了タグを挿入" },
                     { "command": "expand_selection", "args": {"to": "tag"}, "caption": "タグブロックを選択" },
-                    { "command": "insert_snippet", "args": { "name": "Packages/XML/long-tag.sublime-snippet" }, "caption": "選択範囲を新規タグで囲む" }
+                    { "command": "insert_snippet", "args": { "name": "res://Packages/XML/long-tag.sublime-snippet" }, "caption": "選択範囲を新規タグで囲む" }
                 ]
             },
             {
@@ -307,6 +308,7 @@
             { "command": "select_lines", "args": {"forward": false}, "caption": "前行にカレット追加" },
             { "command": "select_lines", "args": {"forward": true}, "caption": "次行にカレット追加" },
             { "command": "single_selection", "caption": "カレットの複数化解除" },
+            { "command": "invert_selection", "caption": "反転選択" },
             { "caption": "-" },
             { "command": "select_all", "caption": "すべて選択" },
             { "command": "expand_selection", "args": {"to": "line"}, "caption": "選択範囲拡張[行単位]" },
@@ -462,9 +464,55 @@
             },
             {
                 "caption": "分割画面選択(F)",
+                "children":
+                [
+                    { "command": "new_pane", "caption": "Move File to New Group" },
+                    { "command": "new_pane", "args": {"move": false}, "caption": "New Group" },
+                    { "command": "close_pane", "caption": "Close Group" },
+
+                    { "caption": "-" },
+
+                    {
+                        "caption": "Max Columns: 1",
+                        "command": "set_max_columns",
+                        "checkbox": true,
+                        "args": { "columns": 1 }
+                    },
+                    {
+                        "caption": "Max Columns: 2",
+                        "command": "set_max_columns",
+                        "checkbox": true,
+                        "args": { "columns": 2 }
+                    },
+                    {
+                        "caption": "Max Columns: 3",
+                        "command": "set_max_columns",
+                        "checkbox": true,
+                        "args": { "columns": 3 }
+                    },
+                    {
+                        "caption": "Max Columns: 4",
+                        "command": "set_max_columns",
+                        "checkbox": true,
+                        "args": { "columns": 4 }
+                    },
+                    {
+                        "caption": "Max Columns: 5",
+                        "command": "set_max_columns",
+                        "checkbox": true,
+                        "args": { "columns": 5 }
+                    },
+                ]
+            },
+            {
+                "caption": "Focus Group",
                 "mnemonic": "F",
                 "children":
                 [
+
+                    { "command": "focus_neighboring_group", "caption": "Next" },
+                    { "command": "focus_neighboring_group", "args": {"forward": false}, "caption": "Previous" },
+                    { "caption": "-" },
                     { "command": "focus_group", "args": {"group": 0}, "caption": "Group 1" },
                     { "command": "focus_group", "args": {"group": 1}, "caption": "Group 2" },
                     { "command": "focus_group", "args": {"group": 2}, "caption": "Group 3" },
@@ -476,6 +524,9 @@
                 "mnemonic": "M",
                 "children":
                 [
+                    { "command": "move_to_neighboring_group", "caption": "Next" },
+                    { "command": "move_to_neighboring_group", "args": {"forward": false}, "caption": "Previous" },
+                    { "caption": "-" },
                     { "command": "move_to_group", "args": {"group": 0}, "caption": "Group 1" },
                     { "command": "move_to_group", "args": {"group": 1}, "caption": "Group 2" },
                     { "command": "move_to_group", "args": {"group": 2}, "caption": "Group 3" },
@@ -570,8 +621,13 @@
             { "command": "show_overlay", "args": {"overlay": "goto", "show_files": true}, "caption": "移動[汎用](A)…", "mnemonic": "A" },
             { "caption": "-" },
             { "command": "show_overlay", "args": {"overlay": "goto", "text": "@"}, "caption": "移動[シンボル]…" },
+            { "command": "goto_symbol_in_project", "caption": "Goto Symbol in Project…" },
+            { "command": "goto_definition", "caption": "Goto Definition…" },
             // { "command": "show_overlay", "args": {"overlay": "goto", "text": "#"}, "caption": "Goto Word…" },
             { "command": "show_overlay", "args": {"overlay": "goto", "text": ":"}, "caption": "移動[行番号]…" },
+            { "caption": "-" },
+            { "command": "jump_back", "caption": "Jump Back" },
+            { "command": "jump_forward", "caption": "Jump Forward" },
             { "caption": "-" },
             {
                 "caption": "ファイル移動(t)",
@@ -704,11 +760,13 @@
     },
     {
         "caption": "プロジェクト(P)",
-        "mnemonic": "P",
         "id": "project",
+        "mnemonic": "P",
         "children":
         [
             { "command": "prompt_open_project", "caption": "プロジェクトを開く(O)…", "mnemonic": "O" },
+            { "command": "prompt_switch_project_or_workspace", "caption": "Switch Project…" },
+            { "command": "prompt_select_workspace", "caption": "Quick Switch Project…", "mnemonic": "S" },
             {
                 "caption": "最近開いたプロジェクト(R)",
                 "mnemonic": "R",
@@ -727,16 +785,16 @@
                 ]
             },
             { "caption": "-" },
-            { "command": "prompt_select_project", "caption": "プロジェクト移動(S)…", "mnemonic": "S" },
             { "command": "save_project_as", "caption": "名前を付けてプロジェクトを保存(A)…", "mnemonic": "A" },
-            { "command": "close_project", "mnemonic": "C", "caption": "プロジェクトを閉じる(C)" },
+            { "command": "close_workspace", "caption": "Close Project", "mnemonic": "C" },
             { "command": "open_file", "args": {"file": "${project}"}, "caption": "プロジェクト設定" },
+            { "caption": "-" },
+            { "command": "new_window_for_project", "caption": "New Workspace for Project" },
+            { "command": "save_workspace_as", "caption": "Save Workspace As…", "mnemonic": "A" },
             { "caption": "-" },
             { "command": "prompt_add_folder", "caption": "プロジェクトにフォルダを追加(d)…", "mnemonic": "d" },
             { "command": "close_folder_list", "caption": "プロジェクトの全フォルダを削除(m)", "mnemonic": "m" },
             { "command": "refresh_folder_list", "caption": "フォルダを再読み込み(e)", "mnemonic": "e" },
-            { "caption": "-" },
-            { "caption": "-", "id": "end" }
         ]
     },
     {
@@ -748,13 +806,27 @@
             { "command": "open_dir", "args": {"dir": "$packages"}, "caption": "Packagesフォルダ(B)…", "mnemonic": "B" },
             { "caption": "-" },
             { "command": "open_file", "args": {"file": "${packages}/Default/Preferences.sublime-settings"}, "caption": "基本設定 – 標準" },
-            { "command": "open_file", "args": {"file": "${packages}/User/Preferences.sublime-settings"}, "caption": "基本設定 – ユーザ" },
+            {
+                "command": "open_file", "args":
+                {
+                    "file": "${packages}/User/Preferences.sublime-settings",
+                    "contents": "// Settings in here override those in \"Default/Preferences.sublime-settings\",\n// and are overridden in turn by file type specific settings.\n{\n\t$0\n}\n"
+                },
+                "caption": "基本設定 – ユーザ"
+            },
             {
                 "caption": "基本設定 – 拡張",
                 "children":
                 [
                     { "command": "open_file_settings", "caption": "シンタックス指定 – ユーザ" },
-                    { "command": "open_file", "args": {"file": "${packages}/User/Distraction Free.sublime-settings"}, "caption": "集中モード – ユーザ" }
+                    {
+                        "command": "open_file", "args":
+                        {
+                            "file": "${packages}/User/Distraction Free.sublime-settings",
+                            "contents": "{\n\t$0\n}\n"
+                        },
+                        "caption": "集中モード – ユーザ"
+                    }
                 ]
             },
             { "caption": "-" },
@@ -768,7 +840,8 @@
             {
                 "command": "open_file", "args":
                 {
-                    "file": "${packages}/User/Default ($platform).sublime-keymap"
+                    "file": "${packages}/User/Default ($platform).sublime-keymap",
+                    "contents": "[\n\t$0\n]\n"
                 },
                 "caption": "キーバインド – ユーザ"
             },
@@ -795,14 +868,15 @@
         "id": "help",
         "children":
         [
-            { "command": "open_url", "args": {"url": "http://www.sublimetext.com/docs/2/"}, "caption": "ドキュメント" },
+            { "command": "open_url", "args": {"url": "http://www.sublimetext.com/docs/3/"}, "caption": "ドキュメント" },
             { "command": "open_url", "args": {"url": "http://twitter.com/sublimehq"}, "caption": "Twitter" },
             { "caption": "-" },
             { "command": "purchase_license", "caption": "ライセンス購入"},
             { "command": "show_license_window", "caption": "ライセンス登録" },
             { "command": "remove_license", "caption": "ライセンス削除"},
             { "caption": "-" },
-            { "command": "show_about_window", "caption": "Sublime Text 2&3について(A)", "mnemonic": "A" }
+            { "command": "update_check", "caption": "アップデートを確認…", "platform": "!Linux" },
+            { "command": "show_about_window", "caption": "Sublime Textについて(A)", "mnemonic": "A" }
         ]
     }
 ]
