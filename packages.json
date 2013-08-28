@@ -1,20 +1,30 @@
 {
-	"schema_version": "1.2",
+	"schema_version": "2.0",
 	"packages": [
 		{
 			"name": "Japanize",
 			"description": "Japanese menu for Sublime Text 2",
-			"author": "kik0220",
 			"homepage": "https://github.com/kik0220/sublimetext_japanize",
-			"last_modified": "2013-08-12 00:58:00",
-			"platforms": {
-				"*": [
-					{
-						"version": "2013.08.12.00.58.00",
-						"url": "https://github.com/kik0220/sublimetext_japanize/zipball/master"
-					}
-				]
-			}
+			"issues":  "https://github.com/kik0220/sublimetext_japanize/issues",
+			"labels": ["theme"],
+			"releases": [
+				{
+					"details": "https://github.com/kik0220/sublimetext_japanize/tree/2999",
+					"platforms": ["*"],
+					"sublime_text": "<3000",
+					"version": "2013.08.28.20.00.00",
+					"date":    "2013-08-28 20:00:00",
+					"url": "https://codeload.github.com/kik0220/sublimetext_japanize/zip/2999"
+				},
+				{
+					"details": "https://github.com/kik0220/sublimetext_japanize",
+					"platforms": ["*"],
+					"sublime_text": ">2999",
+					"version": "2013.08.28.20.00.00",
+					"date":    "2013-08-28 20:00:00",
+					"url": "https://codeload.github.com/kik0220/sublimetext_japanize/zip/master"
+				}
+			]
 		}
 	]
 }

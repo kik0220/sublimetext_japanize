@@ -12,6 +12,3 @@ Sublime Text 2の日本語化プラグインです。
  　　　C:\Users\ユーザー名\AppData\Roaming\Sublime Text 2\Packages\User  
 　　にコピーします。すると、他のプラグインで上書きされてしまっているトップメニューも日本語化されます。  
 以上です。  
-
-※Sublime Text 3をお使いの方は「Japanise3」をご利用ください。  
-https://github.com/kik0220/sublimetext_japanize3  
