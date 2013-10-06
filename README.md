@@ -14,4 +14,7 @@ Sublime Text 2の日本語化プラグインです。
 ３．C:\Users\ユーザー名\AppData\Roaming\Sublime Text 2\Packages\Japanize\Main.sublime-menu（.jpが付かない方）を、  
  　　　C:\Users\ユーザー名\AppData\Roaming\Sublime Text 2\Packages\User  
 　　にコピーします。すると、他のプラグインで上書きされてしまっているトップメニューも日本語化されます。  
+
+※Mac OSでは/Users/ユーザー名/Library/Application Support/Sublime Text 2/Packages/*に読み替えてください。
+
 以上です。  
