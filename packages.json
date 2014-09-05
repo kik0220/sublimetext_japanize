@@ -12,18 +12,12 @@
 				{
 					"details": "https://github.com/kik0220/sublimetext_japanize/tree/2999",
 					"platforms": ["*"],
-					"sublime_text": "<3000",
-					"version": "2013.08.30.06.00.00",
-					"date":    "2013-08-30 06:00:00",
-					"url": "https://codeload.github.com/kik0220/sublimetext_japanize/zip/2999"
+					"sublime_text": "<3000"
 				},
 				{
-					"details": "https://github.com/kik0220/sublimetext_japanize",
+					"details": "https://github.com/kik0220/sublimetext_japanize/tree/master",
 					"platforms": ["*"],
-					"sublime_text": ">2999",
-					"version": "2013.08.30.06.00.00",
-					"date":    "2013-08-30 06:00:00",
-					"url": "https://codeload.github.com/kik0220/sublimetext_japanize/zip/master"
+					"sublime_text": ">=3000"
 				}
 			]
 		}
