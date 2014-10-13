@@ -3,20 +3,14 @@
 	"packages": [
 		{
 			"name": "Japanize",
-			"author": "kik0220",
-			"description": "Japanese menu for Sublime Text 2/3",
-			"homepage": "https://github.com/kik0220/sublimetext_japanize",
-			"issues":  "https://github.com/kik0220/sublimetext_japanize/issues",
-			"labels": ["theme"],
+			"details": "https://github.com/kik0220/sublimetext_japanize",
 			"releases": [
 				{
 					"details": "https://github.com/kik0220/sublimetext_japanize/tree/2999",
-					"platforms": ["*"],
 					"sublime_text": "<3000"
 				},
 				{
 					"details": "https://github.com/kik0220/sublimetext_japanize/tree/master",
-					"platforms": ["*"],
 					"sublime_text": ">=3000"
 				}
 			]
