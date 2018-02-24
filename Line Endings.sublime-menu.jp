@@ -1,0 +1,5 @@
+[
+    { "command": "set_line_ending", "args": {"type": "windows"}, "caption": "Windows改行コード (CRLF)", "checkbox": true },
+    { "command": "set_line_ending", "args": {"type": "unix"}, "caption": "Unix改行コード (LF)", "checkbox": true },
+    { "command": "set_line_ending", "args": {"type": "cr"}, "caption": "Mac OS 9改行コード (CR)", "checkbox": true }
+]

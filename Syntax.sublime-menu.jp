@@ -1,0 +1,6 @@
+[
+    {
+        "caption": "構文",
+        "children": [ { "command": "$file_types" } ]
+    }
+]

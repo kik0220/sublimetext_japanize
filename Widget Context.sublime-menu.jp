@@ -1,0 +1,7 @@
+[
+    { "command": "copy", "caption": "コピー" },
+    { "command": "cut", "caption": "切り取り" },
+    { "command": "paste", "caption": "貼り付け" },
+    { "caption": "-" },
+    { "command": "select_all", "caption": "すべて選択" },
+]
