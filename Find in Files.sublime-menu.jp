@@ -1,0 +1,9 @@
+[
+    { "command": "clear_location", "caption": "クリア" },
+    { "command": "add_directory", "caption": "フォルダに追加" },
+    { "command": "add_where_snippet", "args": {"snippet": "*.${0:txt}"}, "caption": "含有フィルタを追加" },
+    { "command": "add_where_snippet", "args": {"snippet": "-*.${0:txt}"}, "caption": "除外フィルタを追加" },
+    { "command": "add_where_snippet", "args": {"snippet": "<open folders>"}, "caption": "開いているフォルダを追加" },
+    { "command": "add_where_snippet", "args": {"snippet": "<open files>"}, "caption": "開いているファイルを追加" },
+    { "command": "add_where_snippet", "args": {"snippet": "<current file>"}, "caption": "現在のファイルを追加" },
+]
