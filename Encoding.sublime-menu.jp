@@ -20,6 +20,7 @@
             { "caption": "ケルト語 (ISO 8859-14)", "command": "set_encoding", "args": {"encoding": "Celtic (ISO 8859-14)" } },
             { "caption": "中欧 (Windows 1250)", "command": "set_encoding", "args": {"encoding": "Central European (Windows 1250)" } },
             { "caption": "中欧 (ISO 8859-2)", "command": "set_encoding", "args": {"encoding": "Central European (ISO 8859-2)" } },
+            { "caption": "中欧 (Mac)", "command": "set_encoding", "args": {"encoding": "Central European (Mac)" } },
             { "caption": "キリル文字 (Windows 1251)", "command": "set_encoding", "args": {"encoding": "Cyrillic (Windows 1251)" } },
             { "caption": "キリル文字 (Windows 866)", "command": "set_encoding", "args": {"encoding": "Cyrillic (Windows 866)" } },
             { "caption": "キリル文字 (ISO 8859-5)", "command": "set_encoding", "args": {"encoding": "Cyrillic (ISO 8859-5)" } },
@@ -76,6 +77,7 @@
             { "caption": "トルコ語 (Windows 1254)", "command": "reopen", "args": {"encoding": "Turkish (Windows 1254)" } },
             { "caption": "トルコ語 (ISO 8859-9)", "command": "reopen", "args": {"encoding": "Turkish (ISO 8859-9)" } },
             { "caption": "ベトナム語 (Windows 1258)", "command": "reopen", "args": {"encoding": "Vietnamese (Windows 1258)" } },
+            { "caption": "Vietnamese (Windows 1258)", "command": "reopen", "args": {"encoding": "Vietnamese (Windows 1258)" } },
             { "caption": "-" },
             { "caption": "16進数", "command": "reopen", "args": {"encoding": "Hexadecimal" } }
         ]
