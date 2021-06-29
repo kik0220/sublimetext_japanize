@@ -13,5 +13,5 @@
      { "command": "detect_indentation", "caption": "開いているファイルから検出する" },
      { "caption": "-" },
      { "command": "expand_tabs", "caption": "インデントをスペースに変換する", "args": {"set_translate_tabs": true} },
-     { "command": "unexpand_tabs", "caption": "インデントをタブに変換する", "args": {"set_translate_tabs": true} }
+     { "command": "unexpand_tabs", "caption": "インデントをタブに変換する", "args": {"set_translate_tabs": true} },
  ]

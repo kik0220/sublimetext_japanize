@@ -1,0 +1,11 @@
+[
+	{ "command": "close_selected", "args": { "group": -1 }, "caption": "閉じる" },
+	{ "command": "close_others_by_index", "args": { "group": -1, "index": -1 }, "caption": "他を閉じる" },
+	{ "command": "close_unmodified", "args": { "group": -1, "index": -1 }, "caption": "保存済みを閉じる" },
+	{ "command": "close_to_right_by_index", "args": { "group": -1, "index": -1 }, "caption": "下側をすべて閉じる" },
+	{ "command": "close_unmodified_to_right_by_index", "args": { "group": -1, "index": -1 }, "caption": "下側の保存済みをすべて閉じる" },
+	{ "command": "close_deleted_files", "args": { "group": -1 }, "caption": "削除済みファイルを閉じる" },
+	{ "caption": "-" },
+	{ "command": "new_file", "caption": "新規作成" },
+	{ "command": "prompt_open_file", "caption": "ファイルを開く" }
+]
